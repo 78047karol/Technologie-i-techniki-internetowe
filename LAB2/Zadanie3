@@ -1,0 +1,9 @@
+Zad. 3  
+
+Pamięć podręczna DNS to lokalna baza danych przechowująca ostatnio odwiedzone adresy stron internetowych wraz z ich adresami IP. 
+
+Taka pamięć np. Przyspiesza ponowne ładowanie strony ponieważ nie trzeba kolejny raz kontaktować się z serwerem DNS. Zmniejsza obciążenie strony, zwiększa niezawodność. 
+
+Komputer zapamiętuje odwiedzone adresy stron i ich adresy IP żeby przyspieszyć połączenia internetowe i zmniejszyć liczbę zapytań do zewnątrz serwerów DNS  
+
+ 
