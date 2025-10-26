@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rejestracje SYSTEM "persons.dtd">
+<rejestracje xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="persons.xsd">
+  <osoba id="o1">
+    <imie>Anna</imie>
+    <nazwisko>Kowalska</nazwisko>
+    <plec>K</plec>
+    <wiek>29</wiek>
+  </osoba>
+  <osoba id="o2">
+    <imie>Jan</imie>
+    <nazwisko>Nowak</nazwisko>
+    <plec>M</plec>
+    <wiek>35</wiek>
+  </osoba>
+</rejestracje>
