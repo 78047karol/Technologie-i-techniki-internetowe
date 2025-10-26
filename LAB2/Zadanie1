@@ -1,0 +1,21 @@
+Zad. 1  
+
+Dane wejsciowe: 
+
+Przepustowaść: 300 Mb/s  
+
+Jaki plik pobierzemy w ciągu: 1h 
+
+Wielkość pliku: ? 
+
+Sposób obliczenia: 
+
+1 bajt = 8 bitów  
+
+300 megabitów = 300/8 = 37,5 megabitów (MB/s) 
+
+Godzina = 60 min * 60 sekund = 3600 sekund 
+
+37.5 MB/s * 3600 s = 135 000 MB = 132 GB  
+
+Wnioski: Przy przepustowości 300 Mb/s w ciągu godziny można pobrać około 132 GB danych (przy założeniu, że łącze działa z pełną prędkością przez cały czas) 
