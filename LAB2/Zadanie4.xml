@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteka>
+ <ksiazka id="1">
+ <tytul>Wiedźmin: Miecz przeznaczenia</tytul>
+ <autor>Andrzej Sapkowski</autor>
+ <rok_wydania>1992</rok_wydania>
+ <gatunek>fantasy</gatunek>
+ <ocena>9</ocena>
+ </ksiazka>
+ <ksiazka id="2">
+ …
+ </ksiazka>
+</biblioteka>
