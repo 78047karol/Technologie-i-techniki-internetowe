@@ -1,0 +1,28 @@
+www.onet.pl
+Traceroute to www.onet.pl
+Hopy: 12
+Przykładowe czasy odpowiedzi: 5 ms – 25 ms
+Najdalszy węzeł lokalny: router krajowy
+
+www.nasa.com
+Traceroute to www.nasa.com
+Hopy: 18
+Przykładowe czasy odpowiedzi: 90 ms – 240 ms
+Widać trasy międzynarodowe: Europa → USA
+
+www.goggle.com
+Traceroute to www.goggle.com
+Brak odpowiedzi: adres nie istnieje
+DNS nie odnajduje serwera
+
+4.Obserwacje
+Trasa do www.onet.pl była krótka i szybka – co wskazuje, że serwer znajduje się w Polsce lub bardzo blisko.
+Trasa do www.nasa.com była znacznie dłuższa, z większym opóźnieniem – co sugeruje lokalizację w USA i przejście pakietów przez wiele routerów.
+W przypadku www.goggle.com pakiety nie dotarły do docelowego serwera ze względu na błędną nazwę domeny (literówka).
+W wielu węzłach niektóre routery nie odpowiadały na żądania ICMP – typowe zachowanie, gdy administratorzy blokują odpowiedzi ICMP.
+
+5. Wnioski
+Lokalizacja serwera wpływa na trasę i opóźnienia, im dalej położony serwer, tym większa liczba hopów i wyższe czasy odpowiedzi.
+Adresy z literówkami nie zostaną poprawnie odnalezione przez DNS i traceroute ich nie przetestuje.
+Traceroute jest użytecznym narzędziem do analizy działania sieci i diagnozowania problemów z łącznością.
+Wyniki z narzędzi online są zgodne z wynikami otrzymanymi w lokalnym traceroute.
