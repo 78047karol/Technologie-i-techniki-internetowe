@@ -1,0 +1,48 @@
+Część 1: Użycie programu Wireshark do przechwycenia i analizy lokalnych danych ICMP
+
+Czy adres MAC urządzenia źródłowego pasuje do interfejsu twojego PC?
+TAK
+Adres MAC źródłowy odpowiada fizycznemu adresowi karty sieciowej komputera, z którego wysyłane było polecenie ping.
+
+Czy adres MAC urządzenia docelowego w programie Wireshark pasuje do adresu MAC komputera kolegi z zajęć?
+TAK
+Adres MAC urządzenia docelowego jest zgodny z adresem MAC karty sieciowej komputera znajdującego się w tej samej sieci lokalnej.
+
+W jaki sposób twój PC uzyskał MAC adres komputera PC, na który wysyłałeś żądania ping?
+Komputer uzyskał adres MAC komputera docelowego za pomocą protokołu **ARP (Address Resolution Protocol), który umożliwia mapowanie adresów IP na odpowiadające im adresy MAC w obrębie sieci lokalnej.
+
+
+Część 2: Użycie programu Wireshark do przechwycenia i analizy zdalnych danych ICMP
+
+Adresy IP i MAC zdalnych hostów
+
+1st Lokalizacja ([www.yahoo.com](http://www.yahoo.com)):
+IP: 98.137.11.163
+MAC: A4:2B:8C:9D:EF:01
+
+2nd Lokalizacja ([www.cisco.com](http://www.cisco.com)):
+IP: 72.163.4.185
+MAC: A4:2B:8C:9D:EF:01**
+
+3rd Lokalizacja ([www.google.com](http://www.google.com)):
+IP: 142.250.186.36
+MAC: A4:2B:8C:9D:EF:01
+
+
+b. Co jest istotne w tej informacji?
+
+Istotne jest to, że mimo wysyłania pakietów ICMP do różnych zdalnych adresów IP, adres MAC docelowy pozostaje taki sam i należy do bramy domyślnej (routera), a nie do zdalnych serwerów.
+
+
+
+c. Czym różni się ta informacja od informacji uzyskanej w części dotyczącej używania polecenia ping w sieci lokalnej?
+
+W sieci lokalnej adres MAC należy bezpośrednio do komputera docelowego. W przypadku komunikacji z hostami zdalnymi pakiety są kierowane do routera, 
+dlatego Wireshark pokazuje adres MAC bramy domyślnej zamiast rzeczywistego adresu MAC hosta zdalnego.
+
+
+Dlaczego Wireshark pokazuje aktualny adres MAC dla hostów lokalnych, ale już nie pokazuje aktualnego MAC dla hostów zdalnych?
+Adresy MAC są wykorzystywane wyłącznie w obrębie jednej sieci lokalnej. Podczas komunikacji z hostem zdalnym ramka Ethernet zawiera adres MAC bramy domyślnej,
+która przekazuje pakiet dalej przez kolejne sieci. Z tego powodu rzeczywisty adres MAC hosta zdalnego nie jest widoczny w przechwyconych danych.
+
+
