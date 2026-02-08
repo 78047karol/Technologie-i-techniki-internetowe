@@ -29,7 +29,7 @@ IP: 142.250.186.36
 MAC: A4:2B:8C:9D:EF:01
 
 
-b. Co jest istotne w tej informacji?
+
 
 Istotne jest to, że mimo wysyłania pakietów ICMP do różnych zdalnych adresów IP, adres MAC docelowy pozostaje taki sam i należy do bramy domyślnej (routera), a nie do zdalnych serwerów.
 
